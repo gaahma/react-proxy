@@ -5,8 +5,8 @@ import axios from 'axios';
 
 class App extends Component {
   componentDidMount(){
-    fetch("/").then((data) => console.log(data));
-    axios.get('/').then(data => console.log(data));
+    fetch("/data").then((data) => console.log(data));
+    axios.get('/data').then(data => console.log(data));
   }
   render() {
     return (

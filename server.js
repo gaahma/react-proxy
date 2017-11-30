@@ -11,13 +11,9 @@ app.use(bodyParser.json());
 app.use(express.static("client/build"));
 
 
-app.get("/", function(req, res){
+app.get("/data", function(req, res){
   res.send({someData: 1234});
-})
-
-
-// Set up promises with mongoose
-
+});
 
 // Start the API server
 app.listen(PORT, function() {
